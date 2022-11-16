@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Producto from "./Producto";
+import '../scrollBar.css';
 const styles = {
     detallesCarro: {
         backgroundColor: '#fff',
@@ -8,11 +9,13 @@ const styles = {
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         borderRadius: '5px',
         width: '290px',
-        right: 40
+        right: 40,
+        overflow: 'auto',
     },
     ul: {
         margin: 0,
-        padding: 0
+        padding: 0,
+        height: '279px',
     },
     producto: {
         listStyleType: 'none',
@@ -20,9 +23,10 @@ const styles = {
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '25px 20px',
-        borderBottom: 'solid 1px #aaa',
+        borderBottom: 'solid 1px #CBB5B5',
         color: 'rgb(10, 40, 62)',
-        fontWeight: '600'
+        fontWeight: '600',
+        height: 'auto'
     },
     quantity: {
         color: 'black'
@@ -31,9 +35,11 @@ const styles = {
 class DetallesCarro extends Component{
     render(){
         const {carro} = this.props
-        console.log(carro)
         return(
-            <div style={styles.detallesCarro}>
+            <div 
+                style={styles.detallesCarro}
+                className='detallesCarro'
+            >
                 <ul style={styles.ul}>
                     {carro.map(x => 
                     <li style={styles.producto} key={x.name}>

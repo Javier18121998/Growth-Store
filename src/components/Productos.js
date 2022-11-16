@@ -5,6 +5,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        margin: '0 0 25px 0'
     }
 }
 class Productos extends Component{
@@ -13,7 +14,6 @@ class Productos extends Component{
         return(
             <div 
                 style={styles.productos}
-                className='row row-cols-2 row-cols-lg-4 '
             >
                 {productos.map(producto =>
                     <Producto

@@ -1,9 +1,10 @@
 import { Component } from "react";
 import BubbleAlert from './BubbleAlert'
 import DetallesCarro from './DetallesCarro'
+import Comprar from './Comprar';
 const styles = {
     carro: {
-        backgroundColor: '#e67f0d',
+        backgroundColor: '#0076A4',
         color: '#fff',
         border: 'none',
         padding: '13px 17px 13px 17px',
@@ -43,6 +44,7 @@ class Carro extends Component{
                     </svg>
                 </button>
                 {esCarroVisible ? <DetallesCarro carro={carro}/> : null}
+                {esCarroVisible? <Comprar/> : null}
             </div>
         )
     }

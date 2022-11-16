@@ -3,6 +3,7 @@ import Productos from './components/Productos'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
+
 class App extends Component{
   state = {
     productos: [
@@ -10,6 +11,24 @@ class App extends Component{
       { name: 'Pea', price: '20,00 GBP £', pound: '1kg', img: '/productos/arbejas.png'},
       { name: 'Broccoli', price: '22,50 GBP £', pound: '1kg', img: '/productos/brocoli.png'},
       { name: 'Letuce', price: '25,00 GBP £', pound: '1kg', img: '/productos/lechuga.png'},
+    ],
+    productos1: [
+      { name: 'Potato', price: '19,00 GBP £', pound: '1kg', img: '/productos/potato.png'},
+      { name: 'Green Tomato', price: '19,00 GBP £', pound: '1kg', img: '/productos/greenTomato.png'},
+      { name: 'Carrot', price: '18,50 GBP £', pound: '1kg', img: '/productos/carrot.png'},
+      { name: 'Celery', price: '22,75 GBP £', pound: '1kg', img: '/productos/celery.png'},
+    ],
+    productos2: [
+      { name: 'Apple', price: '19,00 GBP £', pound: '1kg', img: '/productos/apple.png'},
+      { name: 'Banana', price: '19,00 GBP £', pound: '1kg', img: '/productos/bannan.png'},
+      { name: 'Kiwi', price: '18,50 GBP £', pound: '1kg', img: '/productos/kiwi.png'},
+      { name: 'Melon', price: '22,75 GBP £', pound: '1kg', img: '/productos/melon.png'},
+    ],
+    productos3: [
+      { name: 'Papaya', price: '19,00 GBP £', pound: '1kg', img: '/productos/papaya.png'},
+      { name: 'Avocado', price: '19,00 GBP £', pound: '1kg', img: '/productos/avocado.png'},
+      { name: 'Watermelon', price: '18,50 GBP £', pound: '1kg', img: '/productos/watermelon.png'},
+      { name: 'Pineapple', price: '22,75 GBP £', pound: '1kg', img: '/productos/pineapple.png'},
     ],
     carro:[],
     esCarroVisible: false,
@@ -52,6 +71,21 @@ class App extends Component{
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos}
+          />
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos1}
+          />
+        </Layout>
+        <Layout>
+          <Title/>
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos2}
+          />
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos3}
           />
         </Layout>
       </div>

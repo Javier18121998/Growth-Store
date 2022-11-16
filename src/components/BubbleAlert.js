@@ -1,12 +1,12 @@
 import { Component } from "react";
 const styles = {
     bubbleAlert: {
-        backgroundColor: '#630c42',
-        borderRadius: '20px',
+        backgroundColor: '#FF001C',
+        borderRadius: '35%',
         color: '#fff',
         padding: '2px 10px',
         fontSize: '0.9rem',
-        width: '20px'
+        width: 'auto'
     }
 }
 class BubbleAlert extends Component{
@@ -17,7 +17,7 @@ class BubbleAlert extends Component{
     render(){
         const {value} = this.props
         return(
-            <span style={styles.bubbleAlert}>
+            <span style={styles.bubbleAlert} >
                 {this.getNumber(value)}
             </span>
         )
