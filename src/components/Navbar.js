@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Logo from './Logo'
 import Carro from './Carro'
+import 'react-bootstrap'
 
 const styles = {
     navbar: {
@@ -10,9 +11,9 @@ const styles = {
         alignItems: 'center',
         position: 'sticky',
         top: 0,
-        backgroundColor: '#fffeee',
+        backgroundColor: '#131921',
         padding: '0 50px',
-        height: '90px',
+        height: '82.5px',
         boxShadow: '0 2px 5px rgb(0,0,0,0.5)',
         zIndex: '1'
     }

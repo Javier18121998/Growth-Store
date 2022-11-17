@@ -3,12 +3,12 @@ const style = {
     menu: {
         backgroundColor: '#fff',
         position: 'fixed',
-        marginTop: 11,
-        boxShadow: '1px 5px 5px rgb(0,0,0,0.1)',
+        boxShadow: '1px 5px 5px rgb(0,0,0,0)',
         borderRadius: '5px',
         width: '170px',
         left: 10,
-        top: 95,
+        top: 90,
+        border: '1px solid #fff'
     },
     ul: {
         margin: 0,

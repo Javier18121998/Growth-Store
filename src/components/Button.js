@@ -1,7 +1,7 @@
 import { Component } from "react"
+import '../effects.css'
 const styles = {
     button: {
-        backgroundColor: '#0A283E',
         color: '#fff',
         padding: '15px 20px',
         border: 'none',
@@ -15,6 +15,7 @@ class Button extends Component{
             <button 
                 style={styles.button}
                 {...this.props} 
+                className='buttonHover'
             />
         )
     }

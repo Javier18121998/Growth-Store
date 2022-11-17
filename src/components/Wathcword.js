@@ -3,19 +3,20 @@ const styles ={
     div: {
         padding: '0px 3px',
         border: '1px solid #eee',
-        boxShadow: '1px 5px 5px rgb(0,0,0,0.1)',
+        boxShadow: '0px 3px 5px rgb(0,0,0,0.2)',
         borderRadius: '5px',
         position: 'fixed',
-        bottom: 10,
+        bottom: 6,
         left: 5,
         width: '170px',
-        display: 'block'
+        display: 'block',
+        border: '1px solid #eee'
     },
     h5:{
         fontSize: '0.78rem',
         fontWeight: '900',
         color: 'rgb(10, 40, 62)',
-        borderBottom: '1px solid rgb(75, 102, 122)',
+        borderBottom: '1px solid rgb(118 135 148)',
         padding: '6px 25px',
         margin: '0'
     },

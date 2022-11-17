@@ -1,19 +1,20 @@
 import { Component } from "react";
-import '../scrollBar.css';
+import '../effects.css';
 
 const style = {
     menu: {
         backgroundColor: '#fff',
         position: 'fixed',
         marginTop: 11,
-        boxShadow: '1px 5px 5px rgb(0,0,0,0.1)',
+        boxShadow: '1px 5px 5px rgb(0,0,0,0.0)',
         borderRadius: '5px',
         width: '170px',
         height: '490px',
         right: 5,
         top: 95,
         overflow: 'auto',
-        zIndex: '0'
+        zIndex: '0',
+        border: '1px solid #fff'
     },
     ul: {
         margin: 0,
@@ -34,7 +35,7 @@ const style = {
 }
 class Navigator extends Component{
     render(){
-        const Titles = ['Greengrocer’s /Oils', 'Dairy Store', 'Butcher´s (Steaks And Meats)', 'Fishmonger’s', 'Off-Licence (Wine-Liquors)', 
+        const Titles = ['Greengrocer’s /Oils', 'Dairy Store', 'Butcher´s (Steaks And Meats)', 'Fishmonger’s', 'Off-Licence (Wine/Liquors)', 
         'Sweet Store', 'Bakery', 'Delicatessen (Deli)']
         return(
             <main 

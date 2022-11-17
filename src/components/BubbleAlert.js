@@ -1,8 +1,8 @@
 import { Component } from "react";
 const styles = {
     bubbleAlert: {
-        backgroundColor: 'rgb(103,1,100)',
-        borderRadius: '35%',
+        backgroundColor: '#f08804',
+        borderRadius: '33%',
         color: '#fff',
         padding: '2px 10px',
         fontSize: '0.9rem',

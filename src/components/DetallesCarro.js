@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Producto from "./Producto";
-import '../scrollBar.css';
+import '../effects.css';
 const styles = {
     detallesCarro: {
         backgroundColor: '#fff',
@@ -15,7 +15,7 @@ const styles = {
     ul: {
         margin: 0,
         padding: 0,
-        height: '279px',
+        maxHeight: '279px',
     },
     producto: {
         listStyleType: 'none',

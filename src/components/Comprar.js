@@ -32,7 +32,7 @@ const style = {
         backgroundColor: 'rgb(0, 118, 164)',
         padding: '8px 11px',
         color: '#fff',
-        borderRadius: '13%',
+        borderRadius: '11%',
         cursor: 'pointer',
         fontSize: '0.8rem'
     }
