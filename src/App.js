@@ -3,6 +3,8 @@ import Productos from './components/Productos'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
+import MenuScroll from './components/MenuScroll'
+import Watchword from './components/Wathcword'
 
 class App extends Component{
   state = {
@@ -31,6 +33,7 @@ class App extends Component{
       { name: 'Pineapple', price: '22,75 GBP £', pound: '1kg', img: '/productos/pineapple.png'},
     ],
     carro:[],
+    precio:[],
     esCarroVisible: false,
   }
   agregarAlCarro = (producto) =>{
@@ -41,7 +44,8 @@ class App extends Component{
           ...proth, 
           cantidad: proth.cantidad + 1
         })
-      : proth)
+        : proth)
+        console.log('hola de nuevo ' + producto.price);
       return this.setState({carro: newCarro})
     }
     return this.setState({
@@ -58,7 +62,6 @@ class App extends Component{
   }
   render(){
     const {esCarroVisible} = this.state
-    console.log(this.state.carro)
     return(
       <div>
         <Navbar 
@@ -66,6 +69,17 @@ class App extends Component{
           esCarroVisible={esCarroVisible} 
           mostrarCarro={this.mostrarCarro}
         />
+        <Layout idName='Hola wey'>
+          <Title/>
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos2}
+          />
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos3}
+          />
+        </Layout>
         <Layout>
           <Title/>
           <Productos
@@ -77,17 +91,8 @@ class App extends Component{
             productos={this.state.productos1}
           />
         </Layout>
-        <Layout>
-          <Title/>
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos2}
-          />
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos3}
-          />
-        </Layout>
+        <MenuScroll/>
+        <Watchword/>
       </div>
     )
   }

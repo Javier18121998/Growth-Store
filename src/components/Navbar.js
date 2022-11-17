@@ -10,10 +10,11 @@ const styles = {
         alignItems: 'center',
         position: 'sticky',
         top: 0,
-        backgroundColor: '#fff',
+        backgroundColor: '#fffeee',
         padding: '0 50px',
         height: '90px',
-        boxShadow: '0 2px 3px rgb(0,0,0,0.2)'
+        boxShadow: '0 2px 5px rgb(0,0,0,0.5)',
+        zIndex: '1'
     }
 }
 class Navbar extends Component{

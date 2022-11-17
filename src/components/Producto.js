@@ -2,15 +2,18 @@ import { Component } from "react";
 import Button from './Button'
 const styles = {
     producto: {
-        border: 'solid 1px #eee',
+        border: 'solid 1px rgb(228, 228, 228)',
         boxShadow: '0 5px 5px rgb(0,0,0, 0.1)',
+        backgroundColor: '#fff',
         width: '20%',
         padding: '10px 15px',
         borderRadius: '3px'
     },
     img: {
         width: '100%',
-        height: '54%'
+        height: '54%',
+        border: 'solid 1px rgb(248, 246, 244)',
+        backgroundColor: '#fff'
     }
 }
 class Producto extends Component{

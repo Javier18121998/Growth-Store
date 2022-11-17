@@ -40,9 +40,12 @@ class DetallesCarro extends Component{
                 style={styles.detallesCarro}
                 className='detallesCarro'
             >
-                <ul style={styles.ul}>
+                <ul 
+                    style={styles.ul}
+                    className='Ul'
+                >
                     {carro.map(x => 
-                    <li style={styles.producto} key={x.name}>
+                    <li style={styles.producto} key={x.name} className='Ul'>
                         <img alt={x.name+'producto'} src={x.img} width='50' height='42'/>
                         {x.name+' per/pound'} <span style={styles.quantity}>{x.cantidad}</span>
                     </li>)}

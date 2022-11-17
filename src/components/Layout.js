@@ -8,13 +8,15 @@ const styles = {
         flexDirection: 'column',
     },
     container: {
-        width: '920px',
+        width: '975px',
     }
 }
 class Layout extends Component{
     render(){
         return(
-            <div style={styles.layout}>
+            <div 
+                style={styles.layout}
+            >
                 <div style={styles.container}>
                     {this.props.children}
                 </div>

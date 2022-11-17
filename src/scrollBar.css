@@ -1,3 +1,6 @@
-.detallesCarro::-webkit-scrollbar{width: 6px; background-color: rgb(233, 233, 233);}
+.detallesCarro{z-index: 1;} .navigator{z-index: 0;} .uL{z-index: 0;} .Ul{z-index: 1;}
+.detallesCarro::-webkit-scrollbar{width: 6px; background-color: rgb(241, 240, 240);;}
 .detallesCarro::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
 .detallesCarro::-webkit-scrollbar-button {background-color: rgb(10, 40, 62); height: 7px; border-radius: 70% 70% 70% 70%;}
+.navigator::-webkit-scrollbar{width: 8px; background-color: rgb(241, 240, 240);}
+.navigator::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
