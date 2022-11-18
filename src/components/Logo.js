@@ -5,7 +5,8 @@ const styles = {
         fontSize: '1.8rem',
         display: 'flex',
         alignItems: 'center',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        height: '100%'
     },
     picLogo: {
         color : '#FBFBFB',

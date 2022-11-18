@@ -17,11 +17,16 @@ const styles = {
     },
     bubble: {
         position: 'relative',
-        left: 0,
-        top: 15,
+        left: 27,
+        top: '-4px',
     },
     icon:{
         color: '#fff'
+    },
+    general: {
+        display: 'flex',
+        alignItems: 'self-start',
+        flexDirection: 'row'
     }
 }
 class Carro extends Component{
@@ -29,7 +34,7 @@ class Carro extends Component{
         const {carro, esCarroVisible, mostrarCarro} = this.props
         const cantidad = carro.reduce((acc, el) =>acc + el.cantidad, 0)
         return(
-            <div>
+            <div style={styles.general}>
                 <span style={styles.bubble}>
                     {cantidad !==0
                     ?<BubbleAlert value = {cantidad}/>

@@ -35,15 +35,20 @@ const style = {
         borderRadius: '11%',
         cursor: 'pointer',
         fontSize: '0.8rem'
+    },
+    h5: {
+        fontSize: '0.8rem'
     }
+
     /**#3CA8C8 */
 }
 class Comprar extends Component{
     render(){
+        const {total} = this.props
         return(
             <p style={style.tarjetacomprar}>
                 <h3 style={style.total}>Total</h3>
-                <h5>340,00 GBP £</h5>
+                <h5 style={style.h5}>{''+total+'GBP £'}</h5>
                 <button
                     style={style.button}
                 >

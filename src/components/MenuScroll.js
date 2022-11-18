@@ -1,4 +1,5 @@
 import { Component } from "react";
+import '../effects.css';
 const style = {
     menu: {
         backgroundColor: '#fff',
@@ -21,11 +22,9 @@ const style = {
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '23px 20px',
-        color: '#000',
         fontWeight: '500',
         height: 'auto',
         fontSize: '0.85rem',
-        cursor: 'pointer',
         borderBottom: '1px solid #eee'
     },
 }
@@ -37,9 +36,9 @@ class MenuScroll extends Component{
                 style={style.menu}
             >
                 <ul style={style.ul}>
-                    <li style={style.li}>{Titles[0]}</li>
-                    <li style={style.li}>{Titles[1]}</li>
-                    <li style={style.li}>{Titles[2]}</li>
+                    <li style={style.li} className='lI'>{Titles[0]}</li>
+                    <li style={style.li} className='lI'>{Titles[1]}</li>
+                    <li style={style.li} className='lI'>{Titles[2]}</li>
                 </ul>
             </main>
         )

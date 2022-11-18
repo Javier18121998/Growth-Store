@@ -1,7 +1,8 @@
-.detallesCarro{z-index: 1;} .navigator{z-index: 0;} .uL{z-index: 0;} .Ul{z-index: 1;}
 .detallesCarro::-webkit-scrollbar{width: 6px; background-color: rgb(241, 240, 240);;}
 .detallesCarro::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
 .navigator::-webkit-scrollbar{width: 8px; background-color: rgb(241, 240, 240);}
 .navigator::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
+.detallesCarro{z-index: 1;} .navigator{z-index: 0;} .lI{background-color: #FFFFFF; color: #000; } .Ul{z-index: 1;}
+.lI:hover{ background-color: #004552; color: #FFFFFF; cursor: pointer;}
 .buttonHover{background-color: #0A283E;}
 .buttonHover:hover{background-color: #004552;}
