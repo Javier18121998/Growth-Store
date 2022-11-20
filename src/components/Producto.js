@@ -6,6 +6,7 @@ const styles = {
         boxShadow: '0 5px 5px rgb(0,0,0, 0.1)',
         backgroundColor: '#fff',
         width: '20%',
+        height: '19rem',
         padding: '10px 15px',
         borderRadius: '3px'
     },
@@ -18,7 +19,7 @@ const styles = {
 }
 class Producto extends Component{
     render(){
-        const { producto, agregarAlCarro } = this.props
+        const { producto, agregarAlCarro, calcularPrecioTotal } = this.props
         return(
             <div style={styles.producto}>
                 <img
@@ -28,8 +29,11 @@ class Producto extends Component{
                 />
                 <h3>{producto.name}</h3>
                 <p>{producto.price}</p>
-                <Button onClick={() => agregarAlCarro(producto)}>
-                    Add to Growth Cart
+                <Button onClick={() => {
+                    calcularPrecioTotal(producto)
+                    agregarAlCarro(producto)
+                }}>
+                    Add to AstonZ Cart
                 </Button>
             </div>
         )

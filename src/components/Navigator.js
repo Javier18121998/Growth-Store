@@ -5,13 +5,12 @@ const style = {
     menu: {
         backgroundColor: '#fff',
         position: 'fixed',
-        marginTop: 11,
         boxShadow: '1px 5px 5px rgb(0,0,0,0.0)',
         borderRadius: '5px',
         width: '170px',
-        height: '426px',
+        height: '361px',
         right: 5,
-        top: 95,
+        top: 90,
         overflow: 'auto',
         zIndex: '0',
         border: '1px solid #fff'
@@ -27,7 +26,8 @@ const style = {
         height: 'auto',
         fontSize: '0.85rem',
         borderBottom: '1px solid #eee',
-        zIndex: '0'
+        zIndex: '0',
+        textAlign: 'center'
     },
 }
 class Navigator extends Component{

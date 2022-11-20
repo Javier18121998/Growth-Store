@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import Title from './components/Title'
 import MenuScroll from './components/MenuScroll'
 import Watchword from './components/Wathcword'
+import Video from './components/Video'
+import Footer from './components/Footer'
 class App extends Component{
   state = {
     productos: [
@@ -31,15 +33,24 @@ class App extends Component{
       { name: 'Watermelon', price: '18.50 GBP £', pound: '1kg', img: '/productos/watermelon.png'},
       { name: 'Pineapple', price: '22.75 GBP £', pound: '1kg', img: '/productos/pineapple.png'},
     ],
+    productos4: [
+      { name: 'Garlic', price: '8.25 GBP £', pound: '1kg', img: '/productos/garlic.png'},
+      { name: 'Onion', price: '6.75 GBP £', pound: '1kg', img: '/productos/onion.png'},
+      { name: 'Ginger', price: '7.50 GBP £', pound: '1kg', img: '/productos/ginger.png'},
+      { name: 'Pepper(Black)', price: '9.25 GBP £', pound: '1kg', img: '/productos/pepperOne.png'},
+    ],
+    productos5:[
+      { name: 'Pepper(White)', price: '9.25 GBP £', pound: '1kg', img: '/productos/pepperTwo.jpg'},
+      { name: 'Cinnamon', price: '10.25 GBP £', pound: '1kg', img: '/productos/cinnamon.png'},
+      { name: 'Cumin', price: '12.25 GBP £', pound: '1kg', img: '/productos/cumin.jpg'},
+      { name: 'Cayenne', price: '9.50 GBP £', pound: '1kg', img: '/productos/cayenne.png'},
+    ],
     carro:[],
     esCarroVisible: false,
+    totalPrice: 0
   }
-  total = 0
-  precio = 0
   agregarAlCarro = (producto) =>{
     const {carro} = this.state
-    this.state.precio = parseFloat(producto.price)
-    this.state.total = this.state.total + this.state.precio
     if (carro.find(proth => proth.name === producto.name)) {
       const newCarro = carro.map(proth => proth.name === producto.name
         ?({
@@ -47,13 +58,25 @@ class App extends Component{
           cantidad: proth.cantidad + 1
         })
         : proth)
-      return this.setState({carro: newCarro})
-    }
+        return this.setState({carro: newCarro})
+      }
       return this.setState({
         carro: this.state.carro.concat({
           ...producto, cantidad: 1,
         })
       })
+  }
+  calcularPrecioTotal = (producto) =>{
+    let {totalPrice} = this.state
+    let price = parseFloat(producto.price)
+    if (totalPrice !== null) {
+      let total = totalPrice + price
+      console.log(totalPrice)
+      return this.setState({totalPrice: total})
+    }
+    return this.setState({
+      totalPrice: price
+    })
   }
   mostrarCarro = () =>{
     if(!this.state.carro.length){
@@ -70,15 +93,17 @@ class App extends Component{
           esCarroVisible={esCarroVisible} 
           mostrarCarro={this.mostrarCarro}
         />
-        <Layout idName='Hola wey'>
+        <Layout>
           <Title/>
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos2}
+            calcularPrecioTotal={this.calcularPrecioTotal}
             />
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos3}
+            calcularPrecioTotal={this.calcularPrecioTotal}
           />
         </Layout>
         <Layout>
@@ -86,14 +111,31 @@ class App extends Component{
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos}
+            calcularPrecioTotal={this.calcularPrecioTotal}
           />
           <Productos
             agregarAlCarro={this.agregarAlCarro}
             productos={this.state.productos1}
+            calcularPrecioTotal={this.calcularPrecioTotal}
+          />
+        </Layout>
+        <Layout>
+          <Title/>
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos4}
+            calcularPrecioTotal={this.calcularPrecioTotal}
+          />
+          <Productos
+            agregarAlCarro={this.agregarAlCarro}
+            productos={this.state.productos5}
+            calcularPrecioTotal={this.calcularPrecioTotal}
           />
         </Layout>
         <MenuScroll/>
         <Watchword/>
+        <Video/>
+        <Footer/>
       </div>
     )
   }

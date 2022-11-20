@@ -7,7 +7,7 @@ const styles = {
         backgroundColor: '#0076A4',
         color: '#fff',
         border: 'none',
-        padding: '13px 17px 13px 17px',
+        padding: '11.5px 15px 11.5px 15px',
         borderRadius: '8px',
         cursor: 'pointer',
         fontSize: '1rem',
@@ -17,7 +17,7 @@ const styles = {
     },
     bubble: {
         position: 'relative',
-        left: 27,
+        left: 24,
         top: '-4px',
     },
     icon:{
@@ -31,7 +31,7 @@ const styles = {
 }
 class Carro extends Component{
     render(){
-        const {carro, esCarroVisible, mostrarCarro} = this.props
+        const {carro, esCarroVisible, mostrarCarro, totalPrice} = this.props
         const cantidad = carro.reduce((acc, el) =>acc + el.cantidad, 0)
         return(
             <div style={styles.general}>
@@ -52,7 +52,7 @@ class Carro extends Component{
                     </svg>
                 </button>
                 {esCarroVisible ? <DetallesCarro carro={carro}/> : null}
-                {esCarroVisible? <Comprar/> : null}
+                {esCarroVisible? <Comprar totalPrice={totalPrice}/> : null}
             </div>
         )
     }

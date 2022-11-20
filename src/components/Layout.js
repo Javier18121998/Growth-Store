@@ -1,14 +1,18 @@
 import { Component } from "react";
 const styles = {
     layout: {
-        backgroundColor: '#fff',
+        backgroundColor: 'rgb(246,246,246)',
         color: '#0A283E',
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
     },
     container: {
-        width: '975px',
+        backgroundColor: '#FFFFFF',
+        width: '890px',        
+        padding: '0 2rem',
+        borderLeft: '1px solid rgb(240 240 240)',
+        borderRight: '1px solid rgb(240 240 240)',
     }
 }
 class Layout extends Component{

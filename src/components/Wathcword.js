@@ -5,26 +5,32 @@ const styles ={
         border: '1px solid #eee',
         boxShadow: '0px 3px 5px rgb(0,0,0,0.2)',
         borderRadius: '5px',
-        position: 'fixed',
-        bottom: 6,
+        position: 'absolute',
+        bottom: 3.25,
         left: 5,
         width: '170px',
         display: 'block',
-        border: '1px solid #eee'
+        zIndex: '0',
+        backgroundColor: '#FFF'
     },
     h5:{
         fontSize: '0.78rem',
-        fontWeight: '900',
-        color: 'rgb(10, 40, 62)',
+        fontWeight: '700',
+        color: '#fff',
         borderBottom: '1px solid rgb(118 135 148)',
         padding: '6px 25px',
-        margin: '0'
+        margin: '0',
+        textAlign: 'center',
+        backgroundColor: 'rgb(19, 25, 33)',
+        zIndex: '0'
     },
     p:{
         fontWeight: '700',
         fontSize: '0.6rem',
         color: 'rgb(22, 22, 22)',
         padding: '2px 17px',
+        textAlign: 'center',
+        zIndex: '0'
     }
 }
 class Watchword extends Component{

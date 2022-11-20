@@ -13,14 +13,14 @@ const styles = {
         top: 0,
         backgroundColor: '#131921',
         padding: '0 50px',
-        height: '82.5px',
-        boxShadow: '0 2px 5px rgb(0,0,0,0.5)',
-        zIndex: '1'
+        height: '81.5px',
+        boxShadow: '0 2px 5px #0A283E',
+        zIndex: '2'
     }
 }
 class Navbar extends Component{
     render(){
-        const { carro, esCarroVisible, mostrarCarro } = this.props
+        const { carro, esCarroVisible, mostrarCarro, totalPrice} = this.props
         return(
             <nav style={styles.navbar}>
                 <Logo/>
@@ -28,6 +28,7 @@ class Navbar extends Component{
                     carro={carro} 
                     esCarroVisible={esCarroVisible} 
                     mostrarCarro={mostrarCarro}
+                    totalPrice={totalPrice}
                 />
             </nav>
         )

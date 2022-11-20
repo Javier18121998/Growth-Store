@@ -3,7 +3,7 @@ import '../effects.css'
 const styles = {
     button: {
         color: '#fff',
-        padding: '15px 20px',
+        padding: '13.5px 19px',
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',

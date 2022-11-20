@@ -10,8 +10,8 @@ const style = {
         width: '262px',
         height: '60px',
         position: 'fixed',
-        bottom: 0,
-        right: 40,
+        bottom: '-11px',
+        right: 20,
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         border: 'solid 1px #eee',
         padding: '0 0.8rem'
@@ -44,11 +44,11 @@ const style = {
 }
 class Comprar extends Component{
     render(){
-        const {total} = this.props
+        let {totalPrice} = this.props
         return(
             <p style={style.tarjetacomprar}>
                 <h3 style={style.total}>Total</h3>
-                <h5 style={style.h5}>{''+total+'GBP £'}</h5>
+                <p>{totalPrice+'GBP £'}</p>
                 <button
                     style={style.button}
                 >

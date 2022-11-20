@@ -9,11 +9,15 @@ const style = {
         width: '170px',
         left: 10,
         top: 90,
-        border: '1px solid #fff'
+        overflow: 'auto',
+        border: '1px solid #fff',
+        zIndex: '1'
     },
     ul: {
         margin: 0,
         padding: 0,
+        maxHeight: '195px',
+        zIndex: '1'
     },
     li: {
         listStyleType: 'none',
@@ -25,15 +29,18 @@ const style = {
         fontWeight: '500',
         height: 'auto',
         fontSize: '0.85rem',
-        borderBottom: '1px solid #eee'
+        borderBottom: '1px solid #eee',
+        textAlign: 'center',
+        zIndex: '1'
     },
 }
-const Titles = ['Fruit Land', 'Country Vegetables', 'Species Bag']
+const Titles = ['Fruit Land', 'Country Vegetables', 'Spices Bag']
 class MenuScroll extends Component{
     render(){
         return(
             <main 
                 style={style.menu}
+                className='navigator'
             >
                 <ul style={style.ul}>
                     <li style={style.li} className='lI'>{Titles[0]}</li>

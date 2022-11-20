@@ -5,11 +5,11 @@ const styles = {
     detallesCarro: {
         backgroundColor: '#fff',
         position: 'absolute',
-        marginTop: '75px',
+        marginTop: '73px',
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         borderRadius: '5px',
         width: '290px',
-        right: 40,
+        right: 20,
         overflow: 'auto',
     },
     ul: {

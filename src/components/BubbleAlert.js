@@ -4,7 +4,7 @@ const styles = {
         backgroundColor: '#f08804',
         borderRadius: '33%',
         color: '#fff',
-        padding: '2px 10px',
+        padding: '2px 9px',
         fontSize: '0.9rem',
         width: 'auto'
     }
