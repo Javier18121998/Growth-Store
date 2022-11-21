@@ -7,10 +7,10 @@ const styles = {
         backgroundColor: '#0076A4',
         color: '#fff',
         border: 'none',
-        padding: '11.5px 15px 11.5px 15px',
+        padding: '11px 13px',
         borderRadius: '8px',
         cursor: 'pointer',
-        fontSize: '1rem',
+        fontSize: '0.85rem',
         fontWeight: '700',
         display: 'flex',
         alignItems: 'center'

@@ -13,7 +13,7 @@ const styles = {
         top: 0,
         backgroundColor: '#131921',
         padding: '0 50px',
-        height: '81.5px',
+        height: '76px',
         boxShadow: '0 2px 5px #0A283E',
         zIndex: '2'
     }

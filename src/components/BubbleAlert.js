@@ -5,7 +5,7 @@ const styles = {
         borderRadius: '33%',
         color: '#fff',
         padding: '2px 9px',
-        fontSize: '0.9rem',
+        fontSize: '0.8rem',
         width: 'auto'
     }
 }

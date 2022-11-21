@@ -6,7 +6,7 @@ const styles = {
     productos: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         margin: '0 0 25px 0'
     }
 }

@@ -5,7 +5,7 @@ const styles = {
     detallesCarro: {
         backgroundColor: '#fff',
         position: 'absolute',
-        marginTop: '73px',
+        marginTop: '67.5px',
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         borderRadius: '5px',
         width: '290px',
@@ -29,7 +29,8 @@ const styles = {
         height: 'auto'
     },
     quantity: {
-        color: 'black'
+        color: 'black',
+        fontWeight: '700'
     }
 }
 class DetallesCarro extends Component{

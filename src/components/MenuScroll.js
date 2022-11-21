@@ -8,7 +8,7 @@ const style = {
         borderRadius: '5px',
         width: '170px',
         left: 10,
-        top: 90,
+        top: 86.5,
         overflow: 'auto',
         border: '1px solid #fff',
         zIndex: '1'

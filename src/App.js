@@ -4,8 +4,7 @@ import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 import MenuScroll from './components/MenuScroll'
-import Watchword from './components/Wathcword'
-import Video from './components/Video'
+import Anouncements from './components/Anouncements'
 import Footer from './components/Footer'
 class App extends Component{
   state = {
@@ -53,25 +52,24 @@ class App extends Component{
     const {carro} = this.state
     if (carro.find(proth => proth.name === producto.name)) {
       const newCarro = carro.map(proth => proth.name === producto.name
-        ?({
-          ...proth, 
-          cantidad: proth.cantidad + 1
-        })
-        : proth)
-        return this.setState({carro: newCarro})
-      }
-      return this.setState({
-        carro: this.state.carro.concat({
-          ...producto, cantidad: 1,
-        })
+      ?({
+        ...proth, 
+        cantidad: proth.cantidad + 1
       })
+      : proth)
+      return this.setState({carro: newCarro})
+    }
+    return this.setState({
+      carro: this.state.carro.concat({
+        ...producto, cantidad: 1,
+      })
+    })
   }
   calcularPrecioTotal = (producto) =>{
     let {totalPrice} = this.state
     let price = parseFloat(producto.price)
-    if (totalPrice !== null) {
+    if (totalPrice !== 0) {
       let total = totalPrice + price
-      console.log(totalPrice)
       return this.setState({totalPrice: total})
     }
     return this.setState({
@@ -92,6 +90,7 @@ class App extends Component{
           carro={this.state.carro} 
           esCarroVisible={esCarroVisible} 
           mostrarCarro={this.mostrarCarro}
+          totalPrice={this.state.totalPrice}
         />
         <Layout>
           <Title/>
@@ -133,8 +132,7 @@ class App extends Component{
           />
         </Layout>
         <MenuScroll/>
-        <Watchword/>
-        <Video/>
+        <Anouncements/>
         <Footer/>
       </div>
     )

@@ -5,4 +5,6 @@
 .detallesCarro{z-index: 1;} .navigator{z-index: 0;} .lI{background-color: #FFFFFF; color: #000; } .Ul{z-index: 1;}
 .lI:hover{ background-color: #004552; color: #FFFFFF; cursor: pointer;}
 .buttonHover{background-color: #0A283E;}
+.buttonBuy{border: 1px solid rgb(0, 118, 164); background-color: rgb(0, 118, 164);}
+.buttonBuy:hover{border: 1px solid #0A283E; background-color: #0A283E;}
 .buttonHover:hover{background-color: #004552;}

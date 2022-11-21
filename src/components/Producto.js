@@ -5,16 +5,23 @@ const styles = {
         border: 'solid 1px rgb(228, 228, 228)',
         boxShadow: '0 5px 5px rgb(0,0,0, 0.1)',
         backgroundColor: '#fff',
-        width: '20%',
-        height: '19rem',
+        width: '18%',
+        height: '17.75rem',
         padding: '10px 15px',
-        borderRadius: '3px'
+        borderRadius: '3px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'center'
     },
     img: {
         width: '100%',
         height: '54%',
         border: 'solid 1px rgb(248, 246, 244)',
         backgroundColor: '#fff'
+    },
+    price:{
+        marginTop: 0
     }
 }
 class Producto extends Component{
@@ -28,7 +35,7 @@ class Producto extends Component{
                     style={styles.img}
                 />
                 <h3>{producto.name}</h3>
-                <p>{producto.price}</p>
+                <p style={styles.price}>{producto.price}</p>
                 <Button onClick={() => {
                     calcularPrecioTotal(producto)
                     agregarAlCarro(producto)
