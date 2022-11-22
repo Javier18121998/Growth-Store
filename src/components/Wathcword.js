@@ -7,7 +7,7 @@ const styles ={
         borderRadius: '5px',
         position: 'absolute',
         bottom: 3.25,
-        left: 5,
+        left: 6.5,
         width: '170px',
         display: 'block',
         zIndex: '0',
@@ -36,7 +36,10 @@ const styles ={
 class Watchword extends Component{
     render(){
         return(
-            <div style={styles.div}>
+            <div 
+                style={styles.div}
+                className='watchword'
+            >
                 <h5 style={styles.h5}>OUR PRIORITY IS HEALTHY FOOD.</h5>
                 <p style={styles.p}>A HEALTHY EATER ALWAYS ENJOYS</p>
                 <p style={styles.p}>A healthy person can enjoy a healthy life forever</p>

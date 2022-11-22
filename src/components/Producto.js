@@ -15,10 +15,10 @@ const styles = {
         alignItems: 'center'
     },
     img: {
-        width: '100%',
-        height: '54%',
-        border: 'solid 1px rgb(248, 246, 244)',
-        backgroundColor: '#fff'
+        width: '97%',
+        height: '49.5%',
+        border: 'solid 1px rgb(250, 246, 244)',
+        backgroundColor: '#FFF'
     },
     price:{
         marginTop: 0

@@ -7,7 +7,7 @@ const style = {
         position: 'fixed',
         boxShadow: '1px 5px 5px rgb(0,0,0,0.0)',
         borderRadius: '5px',
-        width: '170px',
+        width: '177px',
         height: '361px',
         right: 5,
         top: 86.5,

@@ -15,17 +15,18 @@ const styles = {
     ul: {
         margin: 0,
         padding: 0,
-        maxHeight: '279px',
+        maxHeight: '264px',
     },
     producto: {
         listStyleType: 'none',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '25px 20px',
+        padding: '22.5px 18.5px',
         borderBottom: 'solid 1px #CBB5B5',
         color: 'rgb(10, 40, 62)',
         fontWeight: '600',
+        fontSize: '0.85rem',
         height: 'auto'
     },
     quantity: {

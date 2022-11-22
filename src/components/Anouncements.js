@@ -4,9 +4,11 @@ import Video from './Video'
 class Anouncements extends Component{
     render(){
         return(
-            <div>
-                <Watchword/>
+            <div
+                className='Anouncements'
+            >
                 <Video/>
+                <Watchword/>
             </div>
         )
     }

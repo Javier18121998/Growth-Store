@@ -8,3 +8,5 @@
 .buttonBuy{border: 1px solid rgb(0, 118, 164); background-color: rgb(0, 118, 164);}
 .buttonBuy:hover{border: 1px solid #0A283E; background-color: #0A283E;}
 .buttonHover:hover{background-color: #004552;}
+@media (max-width: 500px) {
+}

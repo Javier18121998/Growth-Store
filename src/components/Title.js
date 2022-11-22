@@ -2,7 +2,7 @@ import { Component } from "react";
 const style = {
     title: {
         marginBotton: '30px',
-        fontSize: '1.6rem'
+        fontSize: '1.5rem'
     }
 }
 class Title extends Component{

@@ -15,7 +15,7 @@ const style = {
         right: 20,
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         border: 'solid 1px #eee',
-        padding: '0 0.8rem'
+        padding: '0 0.7rem'
     },
     total: {
         color: 'rgb(10, 40, 62)',
