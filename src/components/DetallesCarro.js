@@ -8,7 +8,7 @@ const styles = {
         marginTop: '67.5px',
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         borderRadius: '5px',
-        width: '290px',
+        width: '280px',
         right: 20,
         overflow: 'auto',
     },

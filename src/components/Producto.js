@@ -3,7 +3,7 @@ import Button from './Button'
 const styles = {
     producto: {
         border: 'solid 1px rgb(228, 228, 228)',
-        boxShadow: '0 5px 5px rgb(0,0,0, 0.1)',
+        boxShadow: '0 5px 5px rgb(0,0,0, 0.2)',
         backgroundColor: '#fff',
         width: '18%',
         height: '17.75rem',

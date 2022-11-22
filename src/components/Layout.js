@@ -9,8 +9,7 @@ const styles = {
     },
     container: {
         backgroundColor: '#FFFFFF',
-        maxWidth: '870px',
-        minWidth: '500px',        
+        width: '870px',
         padding: '0 2rem',
         borderLeft: '1px solid rgb(240 240 240)',
         borderRight: '1px solid rgb(240 240 240)',

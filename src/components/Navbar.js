@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Logo from './Logo'
 import Carro from './Carro'
+import Nav from "./Nav";
 import 'react-bootstrap'
 
 const styles = {
@@ -16,6 +17,16 @@ const styles = {
         height: '76px',
         boxShadow: '0 2px 5px #0A283E',
         zIndex: '2'
+    },
+    SignIn:{
+        color: '#FFFFFF',
+        padding: '0.8rem 1rem',
+        backgroundColor: '#270054',
+        borderRadius: '10%',
+        cursor: 'pointer',
+        fontWeight: '700',
+        letterSpacing: '0.15vh',
+        border: '1px solid rgb(0, 118, 164)'
     }
 }
 class Navbar extends Component{
@@ -24,6 +35,9 @@ class Navbar extends Component{
         return(
             <nav style={styles.navbar}>
                 <Logo/>
+                <Nav/>
+                <h5 style={styles.SignIn}>Sign In</h5>
+                <h5 style={styles.SignIn}>Sign Up</h5>
                 <Carro 
                     carro={carro} 
                     esCarroVisible={esCarroVisible} 

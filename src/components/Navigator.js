@@ -2,19 +2,6 @@ import { Component } from "react";
 import '../effects.css';
 
 const style = {
-    menu: {
-        backgroundColor: '#fff',
-        position: 'fixed',
-        boxShadow: '1px 5px 5px rgb(0,0,0,0.0)',
-        borderRadius: '5px',
-        width: '177px',
-        height: '361px',
-        right: 5,
-        top: 86.5,
-        overflow: 'auto',
-        zIndex: '0',
-        border: '1px solid #fff'
-    },
     ul: {
         margin: 0,
         padding: 0,

@@ -1,18 +1,6 @@
 import { Component } from "react";
 import '../effects.css';
 const style = {
-    menu: {
-        backgroundColor: '#fff',
-        position: 'fixed',
-        boxShadow: '1px 5px 5px rgb(0,0,0,0)',
-        borderRadius: '5px',
-        width: '177px',
-        left: 8.25,
-        top: 86.5,
-        overflow: 'auto',
-        border: '1px solid #fff',
-        zIndex: '1'
-    },
     ul: {
         margin: 0,
         padding: 0,
@@ -40,7 +28,7 @@ class MenuScroll extends Component{
         return(
             <main 
                 style={style.menu}
-                className='navigator'
+                className='navigator1'
             >
                 <ul style={style.ul}>
                     <li style={style.li} className='lI'>{Titles[0]}</li>

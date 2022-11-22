@@ -1,12 +1,40 @@
 .detallesCarro::-webkit-scrollbar{width: 6px; background-color: rgb(241, 240, 240);;}
 .detallesCarro::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
+.navigator{ background-color: #FFF; position: fixed; box-shadow: 1px 5px 5px rgb(0,0,0,0.0); border-radius: 5px; width: 177px; height: 361px; right: 5px; top: 86.5px; overflow: auto; z-index: 0; border: 1px solid #FFF;}
+.navigator1{
+    background-color: #f8f8f8;
+    position: fixed;
+    box-shadow: inset 10px 5.5px 17px #d4d4d4, inset -25px -25px 25px #ffffff;
+    border-radius: 5px;
+    width: 177px;
+    left: 8.25px;
+    top: 86.5px;
+    overflow: auto;
+    border: 1px solid #fff;
+    z-index: 1;
+}
 .navigator::-webkit-scrollbar{width: 8px; background-color: rgb(241, 240, 240);}
 .navigator::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
+.navigator1::-webkit-scrollbar{width: 8px; background-color: rgb(241, 240, 240);}
+.navigator1::-webkit-scrollbar-thumb{background-color: rgb(10, 40, 62); cursor: pointer;}
 .detallesCarro{z-index: 1;} .navigator{z-index: 0;} .lI{background-color: #FFFFFF; color: #000; } .Ul{z-index: 1;}
 .lI:hover{ background-color: #004552; color: #FFFFFF; cursor: pointer;}
 .buttonHover{background-color: #0A283E;}
 .buttonBuy{border: 1px solid rgb(0, 118, 164); background-color: rgb(0, 118, 164);}
 .buttonBuy:hover{border: 1px solid #0A283E; background-color: #0A283E;}
 .buttonHover:hover{background-color: #004552;}
-@media (max-width: 500px) {
+.searchButton{display: flex; align-items: center; justify-content: space-evenly; background-color: rgb(0, 118, 164); border-right: 1px solid rgb(240, 136, 4); border-top: 1px solid rgb(240, 136, 4); border-bottom: 1px solid rgb(240, 136, 4); border-left: 1px solid rgb(0, 2, 3); border-radius: 0 8% 8% 0; padding: 0.7rem 0.75rem; cursor: pointer; color: #FFFFFF; font-weight: 700;}
+.searchButton:hover{color: rgb(247, 247, 247); background-color: #270054; border-top: 1px solid rgb(240, 136, 4); border-right: 1px solid rgb(240, 136, 4); border-bottom: 1px solid rgb(240, 136, 4); cursor: pointer;}
+.inputNav{border: 2px solid rgb(240, 136, 4); width: 30rem; background-color: #f8f8f8; padding: 0.78rem 0.5rem; outline: none; font-weight: 700; letter-spacing: 0.06rem; border-radius: 2% 0 0 2%; box-shadow: inset 10px 5.5px 17px #d4d4d4, inset -25px -25px 25px #ffffff;}
+@media (max-width: 950px) {
+    .inputNav{width: 17.5rem;}
+}
+@media (max-width: 1100px) {
+    .navigator{position: absolute; visibility: hidden;}
+    .navigator1{position: absolute; top: 90px; left: 450px; visibility: hidden;}
+}
+@media (max-width: 750px) {
+    .inputNav{width: 11rem;}
+    .navigator{position: absolute; visibility: hidden;}
+    .navigator1{position: fixed; top: 0; right: 300px;}
 }
