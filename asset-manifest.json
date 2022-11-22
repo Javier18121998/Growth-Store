@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Growth-Store/static/css/main.a7c609c0.css",
+    "main.js": "/Growth-Store/static/js/main.e9b46b97.js",
+    "static/js/787.da3cf394.chunk.js": "/Growth-Store/static/js/787.da3cf394.chunk.js",
+    "index.html": "/Growth-Store/index.html",
+    "main.a7c609c0.css.map": "/Growth-Store/static/css/main.a7c609c0.css.map",
+    "main.e9b46b97.js.map": "/Growth-Store/static/js/main.e9b46b97.js.map",
+    "787.da3cf394.chunk.js.map": "/Growth-Store/static/js/787.da3cf394.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7c609c0.css",
+    "static/js/main.e9b46b97.js"
+  ]
+}
