@@ -24,34 +24,34 @@ const Carousel = () => {
 			<Slideshow controles={true} style={styles.sliderShow}>
 				<Slide>
 					<a href="" style={styles.a}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=nL1v55MUOio' playing muted loop/>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=nL1v55MUOio' controls playing muted loop/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>#1 Apples and More</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
 					<a href="" style={styles.a}>
-                        <ReactPlayer url= 'https://www.youtube.com/watch?v=tsAFoUyTsrk' playing muted loop/>
+                        <ReactPlayer url= 'https://www.youtube.com/watch?v=tsAFoUyTsrk'controls playing muted loop/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>#2 Kiwi caramel and More</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
 					<a href="" style={styles.a}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=ELIekcnsxtg' playing muted loop/>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=ELIekcnsxtg' controls playing muted loop/>
 					</a>
 					<TextoSlide background='rgb()'>
-						<p>15% descuento en productos Apple</p>
+						<p>#3 Coco Disbissis</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
 					<a href="" style={styles.a}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=i8Ue93Fh6gQ' playing muted loop/>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=i8Ue93Fh6gQ' controls playing muted loop/>
 					</a>
 					<TextoSlide>
-						<p>15% descuento en productos Apple</p>
+						<p>#4 Caramel yeth More</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>
