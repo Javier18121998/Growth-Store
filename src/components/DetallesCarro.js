@@ -15,14 +15,14 @@ const styles = {
     ul: {
         margin: 0,
         padding: 0,
-        maxHeight: '264px',
+        maxHeight: '249px',
     },
     producto: {
         listStyleType: 'none',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '22.5px 18.5px',
+        padding: '20px 18.5px',
         borderBottom: 'solid 1px #CBB5B5',
         color: 'rgb(10, 40, 62)',
         fontWeight: '600',

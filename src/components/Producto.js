@@ -3,8 +3,8 @@ import Button from './Button'
 const styles = {
     producto: {
         border: 'solid 1px rgb(228, 228, 228)',
-        boxShadow: '0 5px 5px rgb(0,0,0, 0.2)',
-        backgroundColor: '#fff',
+        boxShadow: '6px 6px 12px #9e9e9e, -8px -8px 16px #ffffff',
+        background: 'linear-gradient(145deg, #ffffff, rgb(248, 248, 248))',
         width: '18%',
         height: '17.75rem',
         padding: '10px 15px',
@@ -17,7 +17,7 @@ const styles = {
     img: {
         width: '97%',
         height: '49.5%',
-        border: 'solid 1px rgb(250, 246, 244)',
+        border: 'solid 1px rgb(250, 240, 238)',
         backgroundColor: '#FFF'
     },
     price:{

@@ -12,7 +12,8 @@ const styles = {
     },
     nav: {
         maxWidth: '36rem',
-        minWidth: '10rem'
+        minWidth: '10rem',
+        paddingLeft: '6.8rem'
     },
     svg:{paddingLeft: '0.3rem'}
 }
@@ -24,7 +25,7 @@ class Nav extends Component{
                     <form role="search"  style={styles.form}>
                         <input 
                             type="Search" 
-                            placeholder="Search over here" 
+                            placeholder="Search your product here" 
                             aria-label="Search"
                             className="inputNav"
                         />

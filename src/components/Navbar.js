@@ -26,7 +26,7 @@ const styles = {
         cursor: 'pointer',
         fontWeight: '700',
         letterSpacing: '0.15vh',
-        border: '1px solid rgb(0, 118, 164)'
+        border: '1px solid rgb(1, 77, 106)'
     }
 }
 class Navbar extends Component{

@@ -6,6 +6,7 @@ import Title from './components/Title'
 import MenuScroll from './components/MenuScroll'
 import Anouncements from './components/Anouncements'
 import Footer from './components/Footer'
+import Carousel from './components/Carousel'
 class App extends Component{
   state = {
     productos: [
@@ -92,6 +93,9 @@ class App extends Component{
           mostrarCarro={this.mostrarCarro}
           totalPrice={this.state.totalPrice}
         />
+        <Layout>
+          <Carousel/>
+        </Layout>
         <Layout>
           <Title/>
           <Productos
