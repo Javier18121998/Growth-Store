@@ -3,6 +3,7 @@ import Logo from './Logo'
 import Carro from './Carro'
 import Nav from "./Nav";
 import 'react-bootstrap'
+import '../effects.css';
 
 const styles = {
     navbar: {
@@ -20,13 +21,12 @@ const styles = {
     },
     SignIn:{
         color: '#FFFFFF',
-        padding: '0.8rem 1rem',
-        backgroundColor: '#270054',
-        borderRadius: '10%',
+        padding: '0.8rem 0.85rem',
+        borderRadius: '5%',
+        border: '1px solid rgb(240, 136, 4)',
         cursor: 'pointer',
         fontWeight: '700',
         letterSpacing: '0.15vh',
-        border: '1px solid rgb(1, 77, 106)'
     }
 }
 class Navbar extends Component{
@@ -36,8 +36,7 @@ class Navbar extends Component{
             <nav style={styles.navbar}>
                 <Logo/>
                 <Nav/>
-                <h5 style={styles.SignIn}>Sign In</h5>
-                <h5 style={styles.SignIn}>Sign Up</h5>
+                <h5 style={styles.SignIn} className='SignIn'>Sign In/Up</h5>
                 <Carro 
                     carro={carro} 
                     esCarroVisible={esCarroVisible} 

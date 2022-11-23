@@ -104,6 +104,7 @@ const Slideshow = ({
 
 const ContenedorPrincipal = styled.div`
 	position: relative;
+	z-index: 0;
 `;
 
 const ContenedorSlideshow = styled.div`
@@ -115,9 +116,10 @@ const Slide = styled.div`
 	min-width: 100%;
 	overflow: hidden;
 	transition: .3s ease all;
-	z-index: 10;
+	z-index: 0;
 	/* max-height: 500px; */
 	position: relative;
+	background-color: rgb(19, 25, 33);
 	img {
 		width: 100%;
 		vertical-align: top;
@@ -125,12 +127,13 @@ const Slide = styled.div`
 `;
 
 const TextoSlide = styled.div`
-	background: ${props => props.colorFondo ? props.colorFondo : '#002c4856'};
+	background: ${props => props.colorFondo ? props.colorFondo : '#03578d2e'};
 	color: ${props => props.colorTexto ? props.colorTexto : '#fff'};
 	width: 100%;
 	padding: 10px 0px;
 	text-align: center;
 	position: absolute;
+	z-index: 0;
 	bottom: 0;
 	@media screen and (max-width: 700px) {
 		position: relative;
@@ -141,7 +144,7 @@ const TextoSlide = styled.div`
 const Controles = styled.div`
 	position: absolute;
 	top: 0;
-	z-index: 20;
+	z-index: 0;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;

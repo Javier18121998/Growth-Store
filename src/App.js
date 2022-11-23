@@ -7,6 +7,11 @@ import MenuScroll from './components/MenuScroll'
 import Anouncements from './components/Anouncements'
 import Footer from './components/Footer'
 import Carousel from './components/Carousel'
+const styles = {
+  carousel: {
+    zIndex: '0'
+  }
+}
 class App extends Component{
   state = {
     productos: [
@@ -94,7 +99,7 @@ class App extends Component{
           totalPrice={this.state.totalPrice}
         />
         <Layout>
-          <Carousel/>
+          <Carousel style={styles.carousel} className='prueba12345'></Carousel>
         </Layout>
         <Layout>
           <Title/>

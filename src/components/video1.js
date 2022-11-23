@@ -6,7 +6,7 @@ const styles = {
         width: '176px',
         height: '166px',
         position: 'absolute',
-        bottom: -1622.5,
+        bottom: -1997,
         left: 6.5,
         display: 'flex',
         alignItems: 'center',
