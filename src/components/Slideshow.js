@@ -110,6 +110,7 @@ const ContenedorPrincipal = styled.div`
 const ContenedorSlideshow = styled.div`
 	display: flex;
 	flex-wrap: nowrap;
+	z-index: 0;
 `;
 
 const Slide = styled.div`
@@ -117,7 +118,7 @@ const Slide = styled.div`
 	overflow: hidden;
 	transition: .3s ease all;
 	z-index: 0;
-	/* max-height: 500px; */
+	max-height: 500px;
 	position: relative;
 	background-color: rgb(19, 25, 33);
 	img {
@@ -161,12 +162,12 @@ const Boton = styled.button`
 	text-align: center;
 	position: absolute;
 	transition: .3s ease all;
-	/* &:hover {
+	&:hover {
 		background: rgba(0,0,0,.2);
 		path {
 			fill: #fff;
 		}
-	} */
+	}
 	path {
 		filter: ${props => props.derecho ? 'drop-shadow(-2px 0px 0px #fff)' : 'drop-shadow(2px 0px 0px #fff)'};
 	}

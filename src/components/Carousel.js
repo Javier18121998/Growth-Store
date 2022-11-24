@@ -6,7 +6,7 @@ import img1 from './../imagesLR/frutas1.jpg'
 import img2 from './../imagesLR/frutas2.jfif'
 const styles = {
 	main: {
-		width: '860px',
+		width: '875px',
 		overflow: 'hidden',
 		zIndex: '0'
 	},
@@ -45,7 +45,7 @@ const Carousel = () => {
 				</Slide>
 				<Slide>
 					<a style={styles.a}>
-                        <ReactPlayer url= 'https://www.youtube.com/watch?v=Lb2jZacYlHU'controls volume={0.8} loop/>
+                        <ReactPlayer url= 'https://www.youtube.com/watch?v=Lb2jZacYlHU'controls volume={0.45} loop/>
 					</a>
 					<TextoSlide>
 						<p>Puebla grape farmers</p>
@@ -72,7 +72,7 @@ const Carousel = () => {
                         <ReactPlayer url='https://www.youtube.com/watch?v=ELIekcnsxtg' controls muted loop/>
 					</a>
 					<TextoSlide background='rgb()'>
-						<p>#5 Pineapple</p>
+						<p>Pineapple</p>
 					</TextoSlide>
 				</Slide>
 				<Slide>
@@ -80,7 +80,7 @@ const Carousel = () => {
                         <ReactPlayer url='https://www.youtube.com/watch?v=i8Ue93Fh6gQ' controls muted loop/>
 					</a>
 					<TextoSlide>
-						<p>#6 Kiwi & Peach</p>
+						<p>Kiwi & Peach</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>

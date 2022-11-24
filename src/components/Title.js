@@ -1,8 +1,9 @@
 import { Component } from "react";
 const style = {
     title: {
-        marginBotton: '30px',
-        fontSize: '1.2rem',
+        marginBottom: '1rem',
+        marginTop: '1rem',
+        fontSize: '1.1rem',
         display: 'flex',
         justifyContent: 'center',
         fontWeight: '700',

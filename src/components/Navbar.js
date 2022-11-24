@@ -15,7 +15,7 @@ const styles = {
         top: 0,
         backgroundColor: '#131921',
         padding: '0 50px',
-        height: '76px',
+        height: '72px',
         boxShadow: '0 2px 5px #0A283E',
         zIndex: '2'
     },
@@ -23,7 +23,6 @@ const styles = {
         color: '#FFFFFF',
         padding: '0.8rem 0.85rem',
         borderRadius: '5%',
-        border: '1px solid rgb(240, 136, 4)',
         cursor: 'pointer',
         fontWeight: '700',
         letterSpacing: '0.15vh',
