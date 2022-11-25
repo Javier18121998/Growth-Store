@@ -1,6 +1,5 @@
 import { Component } from "react";
 import Producto from './Producto'
-import Navigator from './Navigator'
 
 const styles = {
     productos: {
@@ -25,7 +24,6 @@ class Productos extends Component{
                         producto={producto}
                     />
                 )}
-                <Navigator/>
             </div>
             
         )

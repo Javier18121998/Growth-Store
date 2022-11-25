@@ -6,7 +6,7 @@ const styles = {
         width: '176px',
         height: '166px',
         position: 'absolute',
-        bottom: -1997,
+        bottom: -2002,
         left: 6.5,
         display: 'flex',
         alignItems: 'center',
@@ -20,6 +20,7 @@ class AnuncioVideo1 extends Component{
             <div 
                 style={styles.div}
                 className='video'
+                alt= 'anuncioFrutas2'
             >
                 <ReactPlayer url='https://www.youtube.com/watch?v=ab4JClXSy-8' width={'163.5px'} height={'160px'} playing muted loop/>
             </div>

@@ -53,7 +53,7 @@ const Carousel = () => {
 				</Slide>
 				<Slide>
 					<a style={styles.a}>
-                        <ReactPlayer url= 'https://www.youtube.com/watch?v=tsAFoUyTsrk'controls muted loop/>
+                        <ReactPlayer url= 'https://www.youtube.com/watch?v=tsAFoUyTsrk'controls volume={0.35} loop/>
 					</a>
 					<TextoSlide>
 						<p>Blackberries and Strawberries</p>
@@ -69,7 +69,7 @@ const Carousel = () => {
 				</Slide>
 				<Slide>
 					<a style={styles.a}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=ELIekcnsxtg' controls muted loop/>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=ELIekcnsxtg' controls volume={0.35} loop/>
 					</a>
 					<TextoSlide background='rgb()'>
 						<p>Pineapple</p>
@@ -77,7 +77,7 @@ const Carousel = () => {
 				</Slide>
 				<Slide>
 					<a style={styles.a}>
-                        <ReactPlayer url='https://www.youtube.com/watch?v=i8Ue93Fh6gQ' controls muted loop/>
+                        <ReactPlayer url='https://www.youtube.com/watch?v=i8Ue93Fh6gQ' controls volume={0.35} loop/>
 					</a>
 					<TextoSlide>
 						<p>Kiwi & Peach</p>

@@ -19,7 +19,7 @@ const style = {
 }
 class Navigator extends Component{
     render(){
-        const Titles = ['Greengrocer’s /Oils', 'Dairy Store', 'Butcher´s (Steaks And Meats)', 'Fishmonger’s', 'Off-Licence (Wine/Liquors)', 
+        const Titles = ['Principal Store', 'Greengrocer’s /Oils', 'Dairy Store', 'Butcher´s (Steaks And Meats)', 'Fishmonger’s', 'Off-Licence (Wine/Liquors)', 
         'Sweet Store', 'Bakery', 'Delicatessen (Deli)']
         return(
             <main 
@@ -38,6 +38,7 @@ class Navigator extends Component{
                     <li style={style.li} className='lI'>{Titles[5]}</li>
                     <li style={style.li} className='lI'>{Titles[6]}</li>
                     <li style={style.li} className='lI'>{Titles[7]}</li>
+                    <li style={style.li} className='lI'>{Titles[8]}</li>
                 </ul>
             </main>
         )

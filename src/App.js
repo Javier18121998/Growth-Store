@@ -1,17 +1,8 @@
 import { Component } from 'react'
-import Productos from './components/Productos'
-import Layout from './components/Layout'
 import Navbar from './components/Navbar'
-import Title from './components/Title'
-import MenuScroll from './components/MenuScroll'
-import Anouncements from './components/Anouncements'
 import Footer from './components/Footer'
-import Carousel from './components/Carousel'
-const styles = {
-  carousel: {
-    zIndex: '0'
-  }
-}
+import Navigator from './components/Navigator'
+import GreengrocerHalf from './GreengrocerHalf'
 class App extends Component{
   state = {
     productos: [
@@ -98,50 +89,17 @@ class App extends Component{
           mostrarCarro={this.mostrarCarro}
           totalPrice={this.state.totalPrice}
         />
-        <Layout>
-          <Carousel style={styles.carousel} className='prueba12345'></Carousel>
-        </Layout>
-        <Layout>
-          <Title/>
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos2}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-            />
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos3}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-          />
-        </Layout>
-        <Layout>
-          <Title/>
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-          />
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos1}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-          />
-        </Layout>
-        <Layout>
-          <Title/>
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos4}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-          />
-          <Productos
-            agregarAlCarro={this.agregarAlCarro}
-            productos={this.state.productos5}
-            calcularPrecioTotal={this.calcularPrecioTotal}
-          />
-        </Layout>
-        <MenuScroll/>
-        <Anouncements/>
+        <Navigator/>
+        <GreengrocerHalf
+        agregarAlCarro={this.agregarAlCarro}
+        productos={this.state.productos}
+        productos1={this.state.productos1}
+        productos2={this.state.productos2}
+        productos3={this.state.productos3}
+        productos4={this.state.productos4}
+        productos5={this.state.productos5}
+        calcularPrecioTotal={this.calcularPrecioTotal}
+        />
         <Footer/>
       </div>
     )
