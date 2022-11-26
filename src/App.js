@@ -39,8 +39,8 @@ class App extends Component{
     productos3:[
       { name: 'Melon', price: '22.75 GBP £', pound: '1kg', img: '/productos/melon.png'},
       { name: 'Tomato', price: '30.75 GBP £', pound: '1kg', img: '/productos/tomate.png'},
-      { name: 'Green Tomato', price: '19,00 GBP £', pound: '1kg', img: '/productos/greenTomato.png'},
       { name: 'Kiwi', price: '18.50 GBP £', pound: '1kg', img: '/productos/kiwi.png'},
+      { name: 'Green Tomato', price: '19,00 GBP £', pound: '1kg', img: '/productos/greenTomato.png'},
       { name: 'Ginger', price: '7.50 GBP £', pound: '1kg', img: '/productos/ginger.png'},
       { name: 'Papaya', price: '19.00 GBP £', pound: '1kg', img: '/productos/papaya.png'},
       { name: 'Onion', price: '6.75 GBP £', pound: '1kg', img: '/productos/onion.png'},
@@ -51,6 +51,12 @@ class App extends Component{
       { name: 'Whiskey', price: '22.75 GBP £', pound: '1kg', img: '/productos/whiskey.png'},
       { name: 'Pork Cut', price: '22.75 GBP £', pound: '1kg', img: '/productos/pork.png'},
       { name: 'Lamb Cut', price: '22.75 GBP £', pound: '1kg', img: '/productos/lamb.png'},
+    ],
+    productos5:[
+      { name: 'Eggs', price: '22.75 GBP £', pound: '1kg', img: '/productos/eggs.png'},
+      { name: 'Cheese (Yellow)', price: '22.75 GBP £', pound: '1kg', img: '/productos/lleyowcheese.png'},
+      { name: 'Milk', price: '22.75 GBP £', pound: '1kg', img: '/productos/milk.png'},
+      { name: 'Yogurt (Natural)', price: '22.75 GBP £', pound: '1kg', img: '/productos/yogurt.png'},
     ],
     carro:[],
     esCarroVisible: false,
@@ -105,6 +111,7 @@ class App extends Component{
         agregarAlCarro={this.agregarAlCarro}
         productos3={this.state.productos3}
         productos4={this.state.productos4}
+        productos5={this.state.productos5}
         calcularPrecioTotal={this.calcularPrecioTotal}
         />
         <Footer/>
