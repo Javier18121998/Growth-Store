@@ -5,14 +5,15 @@ const styles = {
         border: 'solid 1px rgb(228, 228, 228)',
         boxShadow: '6px 6px 12px #9e9e9e, -8px -8px 16px #ffffff',
         background: 'linear-gradient(145deg, #ffffff, rgb(248, 248, 248))',
-        width: '18%',
+        width: '75%',
         height: '17.75rem',
         padding: '10px 15px',
         borderRadius: '3px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifySelf: 'center',
     },
     img: {
         width: '97%',

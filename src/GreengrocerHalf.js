@@ -12,7 +12,7 @@ const styles = {
 }
 class GreengrocerHalf extends Component{
   render(){
-    const {agregarAlCarro, productos, productos1, productos2, productos3, productos4, productos5, calcularPrecioTotal} = this.props
+    const {agregarAlCarro, productos, productos1, productos2, calcularPrecioTotal} = this.props
     return(
       <div>
         <Layout>
@@ -22,38 +22,19 @@ class GreengrocerHalf extends Component{
           <Title/>
           <Productos
             agregarAlCarro={agregarAlCarro}
+            productos={productos1}
+            calcularPrecioTotal={calcularPrecioTotal}
+          />
+          <Title/>
+          <Productos
+            agregarAlCarro={agregarAlCarro}
             productos={productos2}
             calcularPrecioTotal={calcularPrecioTotal}
           />
-          <Productos
-            agregarAlCarro={agregarAlCarro}
-            productos={productos3}
-            calcularPrecioTotal={calcularPrecioTotal}
-          />
-        </Layout>
-        <Layout>
           <Title/>
           <Productos
             agregarAlCarro={agregarAlCarro}
             productos={productos}
-            calcularPrecioTotal={calcularPrecioTotal}
-          />
-          <Productos
-            agregarAlCarro={agregarAlCarro}
-            productos={productos1}
-            calcularPrecioTotal={calcularPrecioTotal}
-          />
-        </Layout>
-        <Layout>
-          <Title/>
-          <Productos
-            agregarAlCarro={agregarAlCarro}
-            productos={productos4}
-            calcularPrecioTotal={calcularPrecioTotal}
-          />
-          <Productos
-            agregarAlCarro={agregarAlCarro}
-            productos={productos5}
             calcularPrecioTotal={calcularPrecioTotal}
           />
         </Layout>

@@ -8,7 +8,7 @@ const style = {
         backgroundColor: '#fff',
         borderRadius: '3%',
         alignItems: 'center',
-        width: '255.8px',
+        width: '255.7px',
         height: '60px',
         position: 'fixed',
         bottom: '-8px',
