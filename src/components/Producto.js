@@ -41,7 +41,7 @@ class Producto extends Component{
                     calcularPrecioTotal(producto)
                     agregarAlCarro(producto)
                 }}>
-                    Add to AstonZ Cart
+                    Add to AsZ Cart
                 </Button>
             </div>
         )

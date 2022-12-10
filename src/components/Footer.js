@@ -1,13 +1,30 @@
 import { Component } from "react";
 const styles = {
     footer: {
-        height: '162px',
+        height: '180px',
         width: '100%',
         display: 'felx',
         flexDirection: 'column',
+        marginTop: '23px'
+    },
+    main0: {
+        display: 'flex',
+        justifyContent: 'center',
+        width: '100%',
+        height: '18%',
+        alignItems: 'center',
+        backgroundColor: 'rgb(240, 136, 4)',
+        cursor: 'pointer'
+    },
+    h60: {
+        padding: '0.5rem 2rem',
+        cursor: 'pointer',
+        color: '#FFF',
+        fontSize: '0.8rem',
+        textShadow: '-1px 2px 0 black'
     },
     main1: {
-        height: '28%',
+        height: '23%',
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
@@ -20,7 +37,7 @@ const styles = {
     },
     main2:{
         width: '100%',
-        height: '34%',
+        height: '28%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -36,7 +53,7 @@ const styles = {
     },
     main3:{
         width: '100%',
-        height: '38%',
+        height: '33%',
         display: 'flex',
         justifyContent: 'center',
         backgroundColor: 'rgb(19, 25, 33)'
@@ -69,13 +86,19 @@ const styles = {
         color: '#f08804',
         paddingLeft: '0.8rem',
         fontSize: '1.4rem',
-        transform: 'rotate(2deg)'
     }
 }
 class Footer extends Component{
     render(){
         return(
             <footer style={styles.footer}>
+                <main style={styles.main0} onClick={()=>{window.scrollTo(0,0)}}>
+                    <h6 
+                        style={styles.h60}
+                    >
+                        Scroll Upp
+                    </h6>
+                </main>
                 <main style={styles.main1}>
                     <h5 style={styles.h5}>All of our products was being export with both things of astonishing: Quality, Freshness and Oganicness</h5>
                 </main>

@@ -5,7 +5,7 @@ const styles = {
     detallesCarro: {
         backgroundColor: '#fff',
         position: 'absolute',
-        marginTop: '64px',
+        marginTop: '60px',
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         borderRadius: '5px',
         width: '280px',

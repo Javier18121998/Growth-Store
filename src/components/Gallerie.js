@@ -22,7 +22,8 @@ const styles ={
         gridRowGap: '10px',
         gridColumnGap: '7.5px',
         padding: '1.8rem 2rem',
-        position: 'relative'
+        position: 'relative',
+        placeItems: 'center',
     },
     img: {
         width: '100%',
@@ -31,9 +32,9 @@ const styles ={
     title: {
         position: 'absolute',
         color: '#FFF',
-        top: '130px',
-        left: '125px',
-        fontSize: '7rem'
+        fontSize: '8.8rem',
+        textShadow: '0px 0px 6px #eee',
+        fontFamily: 'cursive'
     }
 }
 class Gallerie extends Component{

@@ -1,63 +1,24 @@
-import { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
+import axios from 'axios'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Navigator from './components/Navigator'
-import GreengrocerHalf from './GreengrocerHalf'
 import PrincipalStore from './PrincipalStore'
+
+const styles = {
+  main: {
+    backgroundColor: 'rgb(246, 246, 246)'
+  }
+}
 class App extends Component{
+  urlCero = 'https://localhost:7176/api/Productos'
+  productos0 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").vegetables));
+  productos1 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").fruits));
+  productos2 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").spicesBag));
+  productos3 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").offproducts));
+  productos4 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").inTable));
+  productos5 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").delicatesenIn));
   state = {
-    productos: [
-      { name: 'Tomato', price: '30.75 GBP £', pound: '1kg', img: '/productos/tomate.png'},
-      { name: 'Pea', price: '20.00 GBP £', pound: '1kg', img: '/productos/arbejas.png'},
-      { name: 'Broccoli', price: '22.50 GBP £', pound: '1kg', img: '/productos/brocoli.png'},
-      { name: 'Letuce', price: '25.00 GBP £', pound: '1kg', img: '/productos/lechuga.png'},
-      { name: 'Potato', price: '19,00 GBP £', pound: '1kg', img: '/productos/potato.png'},
-      { name: 'Green Tomato', price: '19,00 GBP £', pound: '1kg', img: '/productos/greenTomato.png'},
-      { name: 'Carrot', price: '18.50 GBP £', pound: '1kg', img: '/productos/carrot.png'},
-      { name: 'Celery', price: '22.75 GBP £', pound: '1kg', img: '/productos/celery.png'},
-    ],
-    productos1: [
-      { name: 'Apple', price: '19.00 GBP £', pound: '1kg', img: '/productos/apple.png'},
-      { name: 'Banana', price: '19.00 GBP £', pound: '1kg', img: '/productos/bannan.png'},
-      { name: 'Kiwi', price: '18.50 GBP £', pound: '1kg', img: '/productos/kiwi.png'},
-      { name: 'Melon', price: '22.75 GBP £', pound: '1kg', img: '/productos/melon.png'},
-      { name: 'Papaya', price: '19.00 GBP £', pound: '1kg', img: '/productos/papaya.png'},
-      { name: 'Avocado', price: '19.00 GBP £', pound: '1kg', img: '/productos/avocado.png'},
-      { name: 'Watermelon', price: '18.50 GBP £', pound: '1kg', img: '/productos/watermelon.png'},
-      { name: 'Pineapple', price: '22.75 GBP £', pound: '1kg', img: '/productos/pineapple.png'},
-    ],
-    productos2: [
-      { name: 'Garlic', price: '8.25 GBP £', pound: '1kg', img: '/productos/garlic.png'},
-      { name: 'Onion', price: '6.75 GBP £', pound: '1kg', img: '/productos/onion.png'},
-      { name: 'Ginger', price: '7.50 GBP £', pound: '1kg', img: '/productos/ginger.png'},
-      { name: 'Pepper(Black)', price: '9.25 GBP £', pound: '1kg', img: '/productos/pepperOne.png'},
-      { name: 'Pepper(White)', price: '9.25 GBP £', pound: '1kg', img: '/productos/pepperTwo.jpg'},
-      { name: 'Cinnamon', price: '10.25 GBP £', pound: '1kg', img: '/productos/cinnamon.png'},
-      { name: 'Cumin', price: '12.25 GBP £', pound: '1kg', img: '/productos/cumin.jpg'},
-      { name: 'Cayenne', price: '9.50 GBP £', pound: '1kg', img: '/productos/cayenne.png'},
-    ],
-    productos3:[
-      { name: 'Melon', price: '22.75 GBP £', pound: '1kg', img: '/productos/melon.png'},
-      { name: 'Tomato', price: '30.75 GBP £', pound: '1kg', img: '/productos/tomate.png'},
-      { name: 'Kiwi', price: '18.50 GBP £', pound: '1kg', img: '/productos/kiwi.png'},
-      { name: 'Green Tomato', price: '19,00 GBP £', pound: '1kg', img: '/productos/greenTomato.png'},
-      { name: 'Ginger', price: '7.50 GBP £', pound: '1kg', img: '/productos/ginger.png'},
-      { name: 'Papaya', price: '19.00 GBP £', pound: '1kg', img: '/productos/papaya.png'},
-      { name: 'Onion', price: '6.75 GBP £', pound: '1kg', img: '/productos/onion.png'},
-      { name: 'Cumin', price: '12.25 GBP £', pound: '1kg', img: '/productos/cumin.jpg'},
-    ],
-    productos4:[
-      { name: 'Vodka', price: '22.75 GBP £', pound: '1kg', img: '/productos/vodka1.png'},
-      { name: 'Whiskey', price: '22.75 GBP £', pound: '1kg', img: '/productos/whiskey.png'},
-      { name: 'Pork Cut', price: '22.75 GBP £', pound: '1kg', img: '/productos/pork.png'},
-      { name: 'Lamb Cut', price: '22.75 GBP £', pound: '1kg', img: '/productos/lamb.png'},
-    ],
-    productos5:[
-      { name: 'Eggs', price: '22.75 GBP £', pound: '1kg', img: '/productos/eggs.png'},
-      { name: 'Cheese (Yellow)', price: '22.75 GBP £', pound: '1kg', img: '/productos/lleyowcheese.png'},
-      { name: 'Milk', price: '22.75 GBP £', pound: '1kg', img: '/productos/milk.png'},
-      { name: 'Yogurt (Natural)', price: '22.75 GBP £', pound: '1kg', img: '/productos/yogurt.png'},
-    ],
     carro:[],
     esCarroVisible: false,
     totalPrice: 0
@@ -99,7 +60,7 @@ class App extends Component{
   render(){
     const {esCarroVisible} = this.state
     return(
-      <div>
+      <div style={styles.main}>
         <Navbar 
           carro={this.state.carro} 
           esCarroVisible={esCarroVisible} 
@@ -109,9 +70,9 @@ class App extends Component{
         <Navigator/>
         <PrincipalStore
         agregarAlCarro={this.agregarAlCarro}
-        productos3={this.state.productos3}
-        productos4={this.state.productos4}
-        productos5={this.state.productos5}
+        productos3={this.productos3}
+        productos4={this.productos4}
+        productos5={this.productos5}
         calcularPrecioTotal={this.calcularPrecioTotal}
         />
         <Footer/>

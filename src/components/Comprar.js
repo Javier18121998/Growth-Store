@@ -11,7 +11,7 @@ const style = {
         width: '255.7px',
         height: '60px',
         position: 'fixed',
-        bottom: '-8px',
+        bottom: '-9px',
         right: 20,
         boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
         border: 'solid 1px #eee',

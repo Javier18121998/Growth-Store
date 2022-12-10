@@ -41,6 +41,19 @@ const styles = {
     backgroundColor: '#f8fcff',
     borderTop: '1px solid #eee',
     borderBottom: '1px solid #eee'
+  },
+  p3: {
+    textAlign: 'center',
+    padding: '1.25rem 2.9rem',
+    color: '#070a0b',
+    fontSize: '1.1rem',
+    fontWeight: '500',
+    fontFamily: 'monospace',
+    backgroundColor: '#f8fcff',
+    borderTop: '1px solid #eee',
+    borderBottom: '1px solid #eee',
+    display: 'flex',
+    justifyContent: 'center'
   }
 }
 class PrincipalStore extends Component{
@@ -89,7 +102,12 @@ class PrincipalStore extends Component{
           />
           <p style={styles.p1}>
             Info about:
-            <p style={styles.p}>(37%) Off</p> 
+            <p style={styles.p3}>
+              <svg width="25" height="25" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.28 4.08a1.2 1.2 0 0 0-1.2 1.2v5.503c0 .319.127.624.352.849l8.4 8.4a1.2 1.2 0 0 0 1.696 0l5.504-5.504a1.2 1.2 0 0 0 0-1.696l-8.4-8.4a1.2 1.2 0 0 0-.849-.352H5.28Zm4.8 4.2a1.8 1.8 0 1 1-3.6 0 1.8 1.8 0 0 1 3.6 0Z"></path>
+              </svg>
+              (37%) Off
+            </p> 
             Our dairies going to be your favorite products in your dinners and lunches, try to cooke with this and grow upp a level enjoying in your 
             costumes and your meets with family during that moments live a really pleassure with your childs, parents, grandother, grandfather, all people
             who brougth a confidence relation with your fellings and truthly times in comfort before and afther the moments.  
@@ -102,10 +120,13 @@ class PrincipalStore extends Component{
             Mission:<br/><br/> Our mission is being a comparate industrie around the world heaviest production of e-comerce to top the indstries and evolve the 
             families in this planet, to conforms a new deliverie producing tapping of caries people to pleassure people for the next future and the same present
             loving every commit and meetings to degust the taste of our products, no forgoten in the process and enjoyed the steps of our lifes and comerce with 
-            no products, but yeth with purposes. 
+            no products, but yeth with purposes. <br/><br/>
+            Vission:<br/><br/> About our plan to redirect the products from farmers whose work in all areas, that redirects the comunication between users/clients
+            and the pornittion of our gouverments to create a excellent way directions in the blowdth ways and administrative in-powerfull. Our users being delivery
+            services coming to the good ways and order ideas. Softly?, Acurracy delivery?, lovely confident?, Pleassure connotation?, all here it´s being a better 
+            option to buy and produce all fetch comerce-in to e-comerce out. 
           </p>
         </Layout>
-        <MenuScroll/>
       </div>
     )
   }

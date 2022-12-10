@@ -7,8 +7,8 @@ const Slideshow = ({
 		children,
 		controles = false,
 		autoplay = false,
-		velocidad="500",
-		intervalo="5000"
+		velocidad=500,
+		intervalo=5000
 	}) => {
 	const slideshow = useRef(null);
 	const intervaloSlideshow = useRef(null);
