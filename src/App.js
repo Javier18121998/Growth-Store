@@ -22,13 +22,6 @@ class App extends Component{
     totalPrice: 0,
     urlInfo: null
   }
-  componentDidMount() {
-    const url = 'https://localhost:7176/api/Productos'
-    axios.get(url).then(response => {
-      this.setState({ urlInfo: response.data })
-      console.log(this.state.urlInfo)
-    }).catch(error =>{console.log(error)})
-  }
   agregarAlCarro = (producto) =>{
     const {carro} = this.state
     if (carro.find(proth => proth.name === producto.name)) {
