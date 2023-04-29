@@ -1,17 +1,15 @@
-import React, { Component, useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { Component } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Navigator from './components/Navigator'
 import PrincipalStore from './PrincipalStore'
-
+import axios from  'axios'
 const styles = {
   main: {
     backgroundColor: 'rgb(246, 246, 246)'
   }
 }
 class App extends Component{
-  urlCero = 'https://localhost:7176/api/Productos'
   productos0 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").vegetables));
   productos1 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").fruits));
   productos2 = JSON.parse(JSON.stringify(require("./DataProducts/products.json").spicesBag));
@@ -21,7 +19,15 @@ class App extends Component{
   state = {
     carro:[],
     esCarroVisible: false,
-    totalPrice: 0
+    totalPrice: 0,
+    urlInfo: null
+  }
+  componentDidMount() {
+    const url = 'https://localhost:7176/api/Productos'
+    axios.get(url).then(response => {
+      this.setState({ urlInfo: response.data })
+      console.log(this.state.urlInfo)
+    }).catch(error =>{console.log(error)})
   }
   agregarAlCarro = (producto) =>{
     const {carro} = this.state

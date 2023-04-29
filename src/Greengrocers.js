@@ -10,7 +10,7 @@ const styles = {
     zIndex: '0'
   }
 }
-class GreengrocerHalf extends Component{
+class Greengrocers extends Component{
   render(){
     const {agregarAlCarro, productos, productos1, productos2, calcularPrecioTotal} = this.props
     return(
@@ -44,4 +44,4 @@ class GreengrocerHalf extends Component{
     )
   }
 }
-export default GreengrocerHalf;
+export default Greengrocers;

@@ -1,5 +1,4 @@
 import { Component } from "react";
-import Producto from "./Producto";
 import '../effects.css';
 const styles = {
     detallesCarro: {
